@@ -17,5 +17,5 @@ test = ["pytest", "pytest-mock"]
 
 [metadata]
 lock-version = "2.0"
-python-versions = ">=3.11,<3.12"
-content-hash = "d442ec26a5c8f9f232ee51cccdecaed722868c3d7af4397d661ac84e20c10e36"
+python-versions = ">=3.6, <3.12"
+content-hash = "1dddeb6d273fab742aadb0087854048d2ca30c032d3b94fabe1cfcb80cb2fe0e"
