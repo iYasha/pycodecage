@@ -1,5 +1,5 @@
 from types import ModuleType
-from typing import Any, Callable, Dict, Tuple
+from typing import Any, Callable, Dict, Tuple, Union
 
 from RestrictedPython import safe_builtins
 
@@ -62,7 +62,7 @@ class BuiltinsFactory:
     def asdict(self) -> Dict[str, Any]:
         return self._builtins
 
-    def update(self, module_name: str, module: ModuleType) -> None:
+    def update(self, module_name: str, module: Union[ModuleType, object]) -> None:
         self._builtins[module_name] = module
 
 
